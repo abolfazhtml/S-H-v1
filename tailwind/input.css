@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .main-primary {
+        @apply border-zinc-900 border-solid w-[98%] h-[100vh] border-[3px] rounded-sm m-2;
+    }
+}

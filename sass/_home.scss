@@ -1,0 +1,307 @@
+.section-reopening {
+  display: grid;
+  grid-template-columns: 2.67fr 1.33fr;
+
+  @include border-3-side;
+
+  .re-opening-link {
+    padding: 3.6rem;
+
+    @include hover-color-img-smg;
+    @include border-right;
+
+    .reopening-heading {
+      font-size: 10rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .reopening-sub-heading {
+      font-size: 1.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+
+    .reopening-description {
+      font-size: 1.9rem;
+    }
+
+    .reopening-read-more {
+      font-size: 1.9rem;
+      text-align: end;
+    }
+
+  }
+
+  .find-us-box {
+    padding: 3.6rem;
+    text-transform: uppercase;
+
+    .find-us-link {
+      padding: 3.6rem;
+      display: block;
+      height: 100%;
+      border: 3px solid;
+      border-image: url("/img/svg/border-outline-blue.svg") 32 round;
+
+      @include hover-color-img-smg;
+
+      .find-us-heading {
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 1.8;
+        text-align: center;
+      }
+
+      .find-us-location-heading {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.8;
+        text-align: center;
+      }
+
+      .find-us-location {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 1.8;
+        font-weight: 500;
+      }
+
+      .find-us-open {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 1.8;
+        font-weight: 500;
+      }
+
+      .find-us-location-box:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+}
+
+.fresh-from-source {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  @include border-3-side;
+
+  .get-in-touch-box {
+    padding: 3.6rem;
+
+    @include border-right;
+
+    .get-in-touch {
+      padding: 3.6rem;
+      height: 100%;
+      border: 3px solid;
+      border-image: url("/img/svg/border-outline-black.svg") 32 round;
+      transition: all 0.5s;
+
+      &:hover,
+      &:active {
+        border-image: url("/img/svg/border-outline-blue.svg") 32 round;
+      }
+
+      .get-in-touch-img {
+        margin-bottom: 2.2rem;
+        @include hover-color-img-smg;
+      }
+
+      .get-in-touch-heading {
+        font-size: 5rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 3rem;
+      }
+
+      .contact-information {
+        display: flex;
+        justify-content: space-between;
+
+        .touch-heading {
+          font-size: 1.8rem;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+
+        .contact-info {
+          font-size: 1.8rem;
+          font-weight: 500;
+          display: block;
+          @include hover-color;
+        }
+      }
+    }
+  }
+
+  .fresh-source {
+    padding: 3.6rem;
+
+    .fresh-source-heading {
+      font-size: 9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .fresh-source-sub-heading {
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    .fresh-source-description-box {
+      display: grid;
+      column-gap: 2.4rem;
+      grid-template-columns: repeat(3, 1fr);
+
+      .fresh-source-description {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+    }
+
+    .fresh-source-img {
+      margin: -22rem 0 0 0;
+
+      @include hover-color-img-smg;
+    }
+  }
+}
+
+.card-section {
+  @include grid-3-col;
+  @include border-3-side;
+
+  .sub-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2.6rem;
+  }
+
+  .read-more {
+    font-size: 1.7rem;
+    text-align: end;
+  }
+
+  .about-card-box0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include border-right;
+
+    .about-card-box {
+      padding: 3.6rem;
+
+      @include hover-color-img-smg;
+
+      .about-card {
+
+        .about-card-heading {
+          font-size: 7.6rem;
+          font-weight: 600;
+          line-height: 1.1;
+          text-transform: uppercase;
+        }
+
+        .about-card-img {
+          margin-bottom: 3rem;
+        }
+
+        .about-card-description {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .footer-empty-box {
+      padding: 5.2rem;
+      width: 100%;
+      //height: 100%;
+      //background-color: #26498d;
+
+      @include border-top;
+    }
+  }
+
+  .how-fishing-card {
+    padding: 3.6rem;
+
+    @include hover-color-img-smg;
+    @include border-right;
+
+    .how-fishing-heading {
+      font-size: 7.6rem;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .how-fishing-img {
+      margin-bottom: 3rem;
+    }
+
+    .how-fishing-description {
+      font-size: 1.6rem;
+    }
+  }
+
+  .fresh-taste-card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .fresh-taste-card {
+      padding: 3.6rem;
+      text-transform: uppercase;
+
+      .fresh-taste-heading {
+        font-size: 6.4rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.2;
+        text-transform: uppercase;
+      }
+
+      .fresh-taste-sub-heading {
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 2.6rem;
+        text-align: center;
+      }
+
+      .fresh-taste-img {
+        margin-bottom: 3rem;
+        @include hover-color-img-smg;
+      }
+
+      .fresh-taste-description {
+        font-size: 1.6rem;
+      }
+    }
+
+    .home-like {
+      font-size: 6.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1;
+      padding: 2rem;
+      display: block;
+      width: 100%;
+
+      @include border-top;
+      @include hover-color;
+    }
+  }
+}

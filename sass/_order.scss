@@ -1,0 +1,74 @@
+.order {
+  &-section {
+    @include border-3-side;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &-text {
+      margin: 2% 0 4% 3%;
+      max-width: 39%;
+      width: 40%;
+
+      &-head {
+        color: black;
+        margin-bottom: 5%;
+        font-size: 10rem;
+        line-height: 1;
+        font-weight: bolder;
+        font-family: sans;
+        text-transform: uppercase;
+      }
+
+      &-paragraph {
+        color: black;
+        max-width: 84%;
+        word-spacing: 7.589px;
+        font-size: 1.75rem;
+      }
+    }
+
+    &-img {
+      @include hover-color-img-smg;
+      margin-top: 1.5rem;
+      max-width: 56%;
+      width: 58%;
+      height: auto;
+    }
+  }
+
+  &-aside {
+    @include border-3-side;
+
+    &-inner {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &-pre-head {
+      margin-top: 3%;
+    }
+
+    &-head {
+      color: $color-black;
+      font-size: 8rem;
+      font-weight: bolder;
+    }
+  }
+
+}
+
+.order-aside-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  @include border-top;
+  padding-bottom: 1rem;
+
+  &-items {
+    font-size: 1.8rem;
+    @include border-right;
+    @include border-bottom;
+    padding: 2rem;
+  }
+}

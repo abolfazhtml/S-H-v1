@@ -1,0 +1,71 @@
+@mixin border-4-side {
+  border: 2px solid $text-color;
+}
+
+@mixin border-4-side-dash {
+  border: 2px dashed $text-color;
+}
+
+@mixin border-3-side {
+  border-top: 2px solid $text-color;
+  border-left: 2px solid $text-color;
+  border-right: 2px solid $text-color;
+}
+
+@mixin border-top-left {
+  border-top: 2px solid $text-color;
+  border-left: 2px solid $text-color;
+}
+
+@mixin border-top-right {
+  border-top: 2px solid $text-color;
+  border-right: 2px solid $text-color;
+}
+
+@mixin border-top {
+  border-top: 2px solid $text-color;
+}
+
+@mixin border-left {
+  border-left: 2px solid $text-color;
+}
+
+@mixin border-right {
+  border-right: 2px solid $text-color;
+}
+
+@mixin border-bottom {
+  border-bottom: 2px solid $text-color;
+}
+
+
+@mixin hover-color {
+  transition: all 0.5s;
+
+  &:hover,
+  &:active {
+    color: $color-primary;
+  }
+}
+
+@mixin hover-color-img-smg {
+  transition: all 0.5s;
+  filter: brightness(90%) grayscale(100%) contrast(130%);
+
+  &:hover,
+  &:active {
+    filter: brightness(100%) grayscale(0) contrast(100%);
+    color: $color-primary;
+  }
+}
+
+@mixin grid-4-col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@mixin grid-3-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+

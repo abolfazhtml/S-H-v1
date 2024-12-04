@@ -1,0 +1,152 @@
+.header-banner {
+  display: grid;
+  grid-template-columns: .75fr 3fr .75fr;
+  background-color: $color-white;
+  text-transform: uppercase;
+
+  .header-banner-main {
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include border-3-side;
+    @include hover-color;
+
+    .date {
+      display: flex;
+      gap: 1rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    .site-title {
+      font-size: 8.6rem;
+      font-weight: 900;
+      letter-spacing: 5px;
+    }
+
+    .site-title-second {
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+  }
+
+  .header-logo {
+    display: block;
+    padding: 3.6rem;
+    @include border-top-left;
+
+    .logo {
+      background-image: url("/img/svg/logo.svg");
+      width: 100%;
+      height: 100%;
+      background-size: 100%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      @include hover-color-img-smg;
+    }
+  }
+
+  .header-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include border-top-right;
+    padding: 3.6rem;
+
+    .location {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      display: block;
+      @include hover-color;
+
+      &:first-child {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+}
+
+.main-nav-list {
+  @include border-3-side;
+  @include grid-4-col;
+
+  .nav-list:not(:last-child) {
+    @include border-right;
+  }
+
+
+  .nav-link {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1.6rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+
+    @include hover-color;
+
+
+  }
+
+}
+
+
+.footer-primary {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  @include border-4-side;
+  font-weight: 600;
+
+}
+
+
+.footer-primary {
+
+}
+
+.footer-items {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr .65fr;
+}
+
+.footer-first-section {
+  text-align: center;
+  @include border-right;
+}
+
+.footer-second-section {
+  @include border-right;
+  place-items: center;
+  text-align: center;
+  cursor: pointer;
+  @include hover-color;
+}
+
+.footer-second-section:hover{
+  color: $color-primary;
+}
+
+.foot {
+  text-align: center;
+  padding: 1.5rem;
+  line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
